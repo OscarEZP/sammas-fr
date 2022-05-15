@@ -1,0 +1,48 @@
+// #logo {
+//     height: 33px;
+//     background: url(../../../assets/sammas-logo.svg) no-repeat;
+//     background-size: 200px 33px;
+//     text-indent: -999em;
+// }
+
+p {
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#container {
+    // background-image: radial-gradient(#b9bd32,#dbbb05);
+    background-color: #dbbb05;
+    // text-align: center;
+    text-align: left;
+    margin: 0 auto;
+    // padding: 20px 0;
+}
+
+mat-toolbar {
+    background-image: radial-gradient(#b9bd32,#dbbb05);
+    background-color: #dbbb05;
+    text-align: center;
+    margin: auto;
+}
+
+mat-tab-group {
+    background-color: #222;
+    color: white
+}
+
+.container-home {
+  display: flex !important;
+  justify-content: center !important;
+  background-color: white;
+  height: 1200px;
+}
+
+.carousel-container {
+    display: inline-block;
+}
+
+:host ::ng-deep .mat-tab-label {
+    color: white;
+  }

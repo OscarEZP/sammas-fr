@@ -1,0 +1,32 @@
+    <carousel
+        [width]="1200"
+        [height]="700"
+        [cellWidth]="2000"
+        [cellsToShow]="1"
+        [cellsToScroll]="1"
+        [loop]="true"
+        [dots]="true"
+        [margin]="10"
+        [autoplay]="true"
+        [autoplayInterval]="3000">
+        <div class="carousel-cell" *ngFor="let item of teams">
+            <div class="row">
+
+                <div class="col-6 content-left">
+
+                    <img src="{{item.fileUrl}}">
+                </div>
+                <div class="col-6 content-right">
+                    <div class="tittle">
+                        <h3>{{item.name}}</h3>
+                    </div>
+                    <div class="content" *ngFor="let notice of item.notices">
+                        {{notice.description}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </carousel>
+
+
+
