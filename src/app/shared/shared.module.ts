@@ -4,10 +4,12 @@ import { HeaderComponent } from './header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
 import { HomeModule } from '../components/home/home.module';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,

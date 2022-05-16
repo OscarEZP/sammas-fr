@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from 'src/app/services/home.service';
+import {MatDialog} from '@angular/material/dialog';
+import { ModalComponent } from 'src/app/shared/modal/modal.component';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +12,8 @@ export class HomeComponent implements OnInit {
 
   teams: any; 
   constructor(
-    private homeService: HomeService
+    private homeService: HomeService,
+    public dialog: MatDialog
   ) { }
   
 
@@ -24,5 +27,13 @@ export class HomeComponent implements OnInit {
       console.log(teams);
     });
     
+  }
+
+  openDialog(item: any) {
+    this.dialog.open(ModalComponent, {
+      data: {
+        id: item.id
+      }
+    });
   }
 }

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  SAMMAS_URL_BACKEND: 'http://localhost:3000'
+  SAMMAS_URL_BACKEND: 'https://sammas.oa.r.appspot.com/'
 };
 
 /*

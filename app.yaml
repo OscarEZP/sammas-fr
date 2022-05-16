@@ -1,0 +1,21 @@
+runtime: python27
+service: sammas-fr
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files: dist/sammas-fr/index.html
+  upload: dist/sammas-fr/index.html
+- url: /
+  static_dir: dist/sammas-fr
+
+skip_files:
+  - e2e/
+  - node_modules/
+  - src/
+  - coverage
+  - ^(.*/)?\..*$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.md$
+  - ^(.*/)?.*\.yaml$
+  - ^LICENSE

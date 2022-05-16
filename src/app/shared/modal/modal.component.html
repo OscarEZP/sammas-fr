@@ -1,0 +1,17 @@
+<div class="container" *ngIf="team">
+    <h1 mat-dialog-title>Notices: {{team.name}}</h1>
+    <div class="row">
+        <div class="col">
+            <div mat-dialog-content *ngFor="let notice of team.notices">
+                {{notice.description}}
+            </div>
+        </div>
+        <div class="col">
+            <img src="{{team.fileUrl}}" width="500" height="500">
+        </div>
+    </div>
+    
+    <div mat-dialog-actions>
+      <button mat-button mat-dialog-close>Cerrar</button>
+    </div>
+</div>

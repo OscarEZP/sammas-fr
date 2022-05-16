@@ -13,4 +13,7 @@ export class HomeService {
     return this.http.get(`${environment.SAMMAS_URL_BACKEND}/teams`);
   }
 
+  getTeamById(id: string) {
+    return this.http.get(`${environment.SAMMAS_URL_BACKEND}/teams/${id}`);
+  }
 }
